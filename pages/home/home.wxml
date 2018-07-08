@@ -1,0 +1,12 @@
+<view class='home-bg'>
+  <view class="section">
+    <view class="flex-wrp" style="flex-direction:row;" wx:for="{{row}}" wx:for-index="rowIndex">
+      <view wx:for="{{column}}" style='width:100%;' wx:for-index="columnIndex">
+      <!--{{imgList[rowIndex][columnIndex].style}}-->
+        <view class="flex-item" data-row="{{rowIndex}}" data-column="{{columnIndex}}" bindtap='onClickImg' style='height:{{itemHeight}}px'>
+          <image id='{{rowIndex}}-{{columnIndex}}' src='{{imgList[rowIndex][columnIndex].src}}' class='view_img' mode='scaleToFill'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,226 @@
+/**
+
+现学现用~~~~
+
+* https://www.runoob.com/css/css-syntax.html
+*   CSS规则:
+*   选择器 { 属性 : 值; }
+
+1、id 选择器
+  #para1
+  {
+      text-align:center;
+      color:red;
+  }
+  <p id="para1">Hello World!</p>
+
+2、class 选择器
+  在以下的例子中，所有拥有 center 类的 HTML 元素均为居中
+  .center {text-align:center;}
+  所有的 p 元素使用 class="center" 让该元素的文本居中:
+  p.center {text-align:center;}
+  
+  <h1 class="center">这个标题不受影响</h1>
+  <p class="center">段落居中。</p> 
+
+*/
+
+.home-bg{
+  background-color: white;
+  width: 100%;
+  height: 100%;
+ /* padding-left: 5rpx;
+  padding-right: 5rpx;
+  border: 5rpx;*/
+}
+
+.section__title {
+  font-size: 18pt;
+  padding-bottom: 15rpx;
+}
+
+.page-section {
+  margin-bottom: 20rpx;
+}
+
+.flex-wrp {
+  display: flex;
+}
+
+.flex-item{
+
+  border-radius: 5px;
+  width: 95%;
+  height: 100%;
+  display: inline-block;
+  line-height: 35px;
+  font-size: 15px;
+  position: relative;
+  opacity: .999;
+}
+
+.bc_green {
+  background: green;
+}
+
+.bc_red {
+  background: red;
+}
+
+.bc_blue {
+  background: blue;
+}
+
+.bc_peachpuff {
+  background: peachpuff;
+}
+
+.view_img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.btn-border-o {
+  background-color: transparent;
+  border: 1px solid #d0d0d0;
+  color: #B8B8B8;
+}
+.btn-border-o:before, .btn-border-o:after {
+  content: '';
+  border-style: solid;
+  position: absolute;
+  z-index: 5;
+  border-radius: 3px;
+  box-sizing: content-box;
+}
+.btn-border-o:before {
+  width: 0;
+  height: 100%;
+  border-width: 1px 0 1px 0;
+  top: -1px;
+  left: 0;
+  -webkit-transition-delay: 0.05s;
+          transition-delay: 0.05s;
+}
+.btn-border-o:after {
+  width: 100%;
+  height: 0;
+  border-width: 0 1px 0 1px;
+  top: 0;
+  left: -1px;
+}
+.btn-border-o:hover:before {
+  width: 100%;
+}
+.btn-border-o:hover:after {
+  height: 100%;
+}
+.btn-border-o.btn-green:before, .btn-border-o.btn-green:after {
+  border-color: #2ecc71;
+}
+.btn-border-o.btn-green:hover {
+  color: #2ecc71;
+}
+.btn-border-o.btn-blue:before, .btn-border-o.btn-blue:after {
+  border-color: #3498db;
+}
+.btn-border-o.btn-blue:hover {
+  color: #3498db;
+}
+.btn-border-o.btn-purple:before, .btn-border-o.btn-purple:after {
+  border-color: #9b59b6;
+}
+.btn-border-o.btn-purple:hover {
+  color: #9b59b6;
+}
+.btn-border-o.btn-navy:before, .btn-border-o.btn-navy:after {
+  border-color: #34495e;
+}
+.btn-border-o.btn-navy:hover {
+  color: #34495e;
+}
+.btn-border-o.btn-orange:before, .btn-border-o.btn-orange:after {
+  border-color: #e67e22;
+}
+.btn-border-o.btn-orange:hover {
+  color: #e67e22;
+}
+.btn-border-o.btn-red:before, .btn-border-o.btn-red:after {
+  border-color: #e74c3c;
+}
+.btn-border-o.btn-red:hover {
+  color: #e74c3c;
+}
+
+
+.btn-fill-horz:before, .btn-fill-horz:after {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+
+.btn-fill-horz {
+  background-color: #e5e5e5;
+  border: 1px solid #e5e5e5;
+  color: #a6a6a6;
+  overflow: hidden;
+}
+.btn-fill-horz:before, .btn-fill-horz:after {
+  content: '';
+  width: 0;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.btn-fill-horz:before {
+  left: 50%;
+}
+.btn-fill-horz:after {
+  right: 50%;
+}
+.btn-fill-horz:hover {
+  color: #fff;
+}
+.btn-fill-horz:hover:before, .btn-fill-horz:hover:after {
+  width: 50%;
+  opacity: 1;
+}
+.btn-fill-horz.btn-green:before, .btn-fill-horz.btn-green:after {
+  background-color: #2ecc71;
+}
+.btn-fill-horz.btn-green:hover {
+  border-color: #2ecc71;
+}
+.btn-fill-horz.btn-blue:before, .btn-fill-horz.btn-blue:after {
+  background-color: #3498db;
+}
+.btn-fill-horz.btn-blue:hover {
+  border-color: #3498db;
+}
+.btn-fill-horz.btn-purple:before, .btn-fill-horz.btn-purple:after {
+  background-color: #9b59b6;
+}
+.btn-fill-horz.btn-purple:hover {
+  border-color: #9b59b6;
+}
+.btn-fill-horz.btn-navy:before, .btn-fill-horz.btn-navy:after {
+  background-color: #34495e;
+}
+.btn-fill-horz.btn-navy:hover {
+  border-color: #34495e;
+}
+.btn-fill-horz.btn-orange:before, .btn-fill-horz.btn-orange:after {
+  background-color: #e67e22;
+}
+.btn-fill-horz.btn-orange:hover {
+  border-color: #e67e22;
+}
+.btn-fill-horz.btn-red:before, .btn-fill-horz.btn-red:after {
+  background-color: #e74c3c;
+}
+.btn-fill-horz.btn-red:hover {
+  border-color: #e74c3c;
+}
